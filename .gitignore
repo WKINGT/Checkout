@@ -1,4 +1,5 @@
 *.iml
+/.idea
 /*/*.iml
 /*/src/test
 /target
@@ -9,3 +10,4 @@
 /*/target/*
 /logs
 /logs/*.log
+/.idea/*
