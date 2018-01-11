@@ -4,6 +4,7 @@ import net.xgs.model.NormalBook;
 import net.xgs.model.UnsalableBook;
 import net.xgs.payment.CheckoutSystem;
 import org.junit.After;
+import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -39,5 +40,6 @@ public class TestCheckoutSystem {
     @Test
     public void ComputerPrice(){
         totalPrice = new CheckoutSystem().ComputerPrice1(books);
+        Assert.assertEquals(163.9,totalPrice,0.1);
     }
 }
