@@ -1,5 +1,7 @@
 package net.xgs.bitmap;
 
+import com.googlecode.javaewah.EWAHCompressedBitmap;
+
 public class KindsOfHash {
 	public static int hash1_BKDRHash(String str) {
 	    int seed = 131; // 31 131 1313 13131 131313 etc..

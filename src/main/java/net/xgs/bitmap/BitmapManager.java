@@ -1,8 +1,10 @@
 package net.xgs.bitmap;
 
+import com.googlecode.javaewah.EWAHCompressedBitmap;
 import com.googlecode.javaewah32.EWAHCompressedBitmap32;
 
 import java.io.Serializable;
+import java.util.BitSet;
 
 
 public class BitmapManager implements Serializable{
@@ -49,6 +51,15 @@ public class BitmapManager implements Serializable{
 //		BitmapManager.getInstance().bitmap.clear();
 //		System.out.println(BitmapManager.getInstance().isCotainsString(s));
 //		System.out.println(BitmapManager.getInstance().isCotainsString(s1));
+		BitSet bitset = new BitSet();
+		bitset.set(1111);
+		bitset.set(222222222);
+		System.out.println(bitset.get(1111));
+		System.out.println(bitset.get(222222222));
+		System.out.println(bitset.get(222222223));
+		EWAHCompressedBitmap bitmap64 = new EWAHCompressedBitmap();
+
+
 	}
 
 }
