@@ -14,7 +14,6 @@ public class CFCronTriggerRunner {
         
         // Initiate JobDetail with job name, job group, and executable job class
         JobDetailImpl jobDetailImpl = new JobDetailImpl();
-        jobDetailImpl.setJobClass(CFJob.class);
         jobDetailImpl.setKey(new JobKey("CFJob1"));
         jobDetailImpl.getJobDataMap().put("users", users);
         // Initiate CronTrigger with its name and group name
